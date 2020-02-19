@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div id="head">
+      <div id="bg"/>
       <div id="navbar">
         <img id="logo" src="@/assets/logo.png" alt="">
         <nav>
@@ -10,9 +11,11 @@
           </ul>
         </nav>
       </div>
-      <div id="business-text">
+    </div>
+    <div id="business-text">
         <h1>Business and IT Services</h1>
       </div>
+    <div id="main">
     </div>
   </div>
 </template>
@@ -29,6 +32,8 @@ export default {
 
 #head {
   display: block;
+  width: 100vw;
+  height: 100vh;
 }
 
 #navbar {
@@ -37,6 +42,7 @@ export default {
   align-items: center;
   position: absolute;
   width: 100%;
+  overflow: hidden;
 }
 
 .nav__links {
@@ -47,7 +53,6 @@ export default {
   display: inline-block;
   padding: 0 1.25rem;
   font-size: 0.75rem;
-  font-family: 'Open Sans', sans-serif;
   color: #1E1A1A;
   border-radius: 0.5rem;
   margin: 0 1.25rem;
@@ -62,24 +67,41 @@ export default {
   padding: 1rem;
 }
 
-#image {
-  margin: auto;
-  max-width: 100vw;
-}
-
 #business-text {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -100%);
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
   color: #1E1A1A;
   padding-bottom: 2em;
 }
 
+#main {
+  width: 100%;
+  min-height: 400px;
+  background-color: white;
+}
+
+#bg {
+  position: absolute; 
+  top: 0; 
+  left: 0;
+
+  background-image: url("./assets/main-background-8.jpg");
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align:center;
+  margin:auto;
+  padding:0;
+}
+
 body {
-  font-family: "Brandon Grotesque", Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */
@@ -93,7 +115,6 @@ body {
   vertical-align: baseline;
   background: transparent;
   box-sizing: border-box;
-  overflow:hidden;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -114,11 +135,11 @@ html {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  background: url(~@/assets/main-background-8.jpg) no-repeat center center fixed; 
+  /* background: url(~@/assets/main-background-8.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
 }
 
 /* Sections
