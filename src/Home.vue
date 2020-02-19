@@ -25,14 +25,10 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 #head {
   display: block;
-  background-image: url(~@/assets/main-background-6.jpg);
-  background-repeat: repeat;
-  height: 100vh;
-  width: 100vw;
 }
 
 #navbar {
@@ -45,21 +41,20 @@ export default {
 
 .nav__links {
   list-style: none;
-  opacity: 1 !important;
 }
 
 .nav__links li {
   display: inline-block;
   padding: 0 1.25rem;
   font-size: 0.75rem;
-  color: #C9C9C9;
+  font-family: 'Open Sans', sans-serif;
+  color: #1E1A1A;
   border-radius: 0.5rem;
   margin: 0 1.25rem;
   opacity: 1;
 }
 
 #logo {
-  filter: invert(1);
   max-width: 192px;
   border-radius: 0.5rem;
   margin: 0 1.25rem;
@@ -68,19 +63,18 @@ export default {
 }
 
 #image {
-  max-width: 100%;
-  max-height: 100vh;
   margin: auto;
+  max-width: 100vw;
 }
 
 #business-text {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Bai Jamjuree', sans-serif;
+  transform: translate(-50%, -100%);
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
-  color: #C9C9C9;
+  color: #1E1A1A;
   padding-bottom: 2em;
 }
 
@@ -120,6 +114,11 @@ html {
   padding: 0;
   margin: 0;
   font-size: 16px;
+  background: url(~@/assets/main-background-8.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* Sections
