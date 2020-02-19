@@ -10,7 +10,6 @@
           </ul>
         </nav>
       </div>
-      <img id="image" src="@/assets/main-background-4.jpg"/>
       <div id="business-text">
         <h1>Business and IT Services</h1>
       </div>
@@ -30,7 +29,10 @@ export default {
 
 #head {
   display: block;
-  position: relative;
+  background-image: url(~@/assets/main-background-4.jpg);
+  background-repeat: repeat;
+  height: 100vh;
+  width: 100vw;
 }
 
 #navbar {
@@ -67,6 +69,8 @@ export default {
 
 #image {
   max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
 }
 
 #business-text {
