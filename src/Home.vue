@@ -10,7 +10,7 @@
           </ul>
         </nav>
       </div>
-      <img id="image" src="@/assets/main-background-3.jpg"/>
+      <img id="image" src="@/assets/main-background-4.jpg"/>
       <div id="business-text">
         <h1>Business and IT Services</h1>
       </div>
@@ -39,9 +39,6 @@ export default {
   align-items: center;
   position: absolute;
   width: 100%;
-  padding: 20px;
-  background-color: black;
-  opacity: 0.25;
 }
 
 .nav__links {
@@ -53,7 +50,7 @@ export default {
   display: inline-block;
   padding: 0 1.25rem;
   font-size: 0.75rem;
-  color: white;
+  color: #C9C9C9;
   border-radius: 0.5rem;
   margin: 0 1.25rem;
   opacity: 1;
@@ -79,7 +76,7 @@ export default {
   transform: translate(-50%, -50%);
   font-family: 'Bai Jamjuree', sans-serif;
   font-size: 1.5rem;
-  color: black;
+  color: #C9C9C9;
   padding-bottom: 2em;
 }
 
