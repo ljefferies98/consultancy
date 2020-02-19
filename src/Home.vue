@@ -29,7 +29,7 @@ export default {
 
 #head {
   display: block;
-  background-image: url(~@/assets/main-background-4.jpg);
+  background-image: url(~@/assets/main-background-6.jpg);
   background-repeat: repeat;
   height: 100vh;
   width: 100vw;
